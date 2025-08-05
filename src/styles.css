@@ -3,27 +3,29 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background: rgb(221, 208, 191);
+    height: 100%;
+}
+html{
     height: 100%;
 }
 #content{
     background-color: rgb(205, 183, 155);
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
     color: white;
-    flex-direction: column;
     padding-top: 0;
+    flex: 1;
 }
 h1{
     font-size: 80px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.menu-title{
+.title{
     font-size: 60px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -35,6 +37,11 @@ p{
 }
 .background-img{
     opacity: 0.6;
+    filter: brightness(70%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
 }
 .content-body{
     position: absolute;
@@ -60,16 +67,6 @@ button:hover {
     color: white;
 }
 
-.menu-button{
-    background-color: #ffffff; 
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-}
 header{
     background-color: rgb(221, 208, 191);
 }
@@ -92,4 +89,15 @@ header{
 .menu-text{
     width: 360px;
     height: 240px;
+}
+.p_about{
+    text-align: left;
+}
+.about-content{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
 }
