@@ -50,7 +50,7 @@ export function createMenuPage(){
     let container = document.createElement("div");
     let h2 = document.createElement("h2");
     h2.textContent = "Restaurant Menu";
-    h2.classList.add("menu-title");
+    h2.classList.add("title");
     container.classList.add("container");
     content.appendChild(h2);
     for(let item of menu_arr){
