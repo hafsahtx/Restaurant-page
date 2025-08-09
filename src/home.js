@@ -10,7 +10,10 @@ export function createHomepage(){
     div.classList.add("content-body");
     let h1 = document.createElement("h1");
     h1.textContent = "Enjoy our delicous Menu";
+    h1.style.color = "white";
     let p = document.createElement("p");
+    p.style.color = "white";
+    p.style.fontSize = "20px";
     p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
     div.appendChild(h1);
     div.appendChild(p);
