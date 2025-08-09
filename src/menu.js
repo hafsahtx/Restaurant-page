@@ -27,18 +27,20 @@ function createCard(item){
     let image = document.createElement("img");
     let text_div = document.createElement("div");
     text_div.classList.add("menu-text");
-    let h3 = document.createElement("h3");
+    let h2 = document.createElement("h2");
     let p = document.createElement("p");
-    let price = document.createElement("h3");
+    let price = document.createElement("h2");
     image.src = item.img;
     image.setAttribute("alt",item.menu_title);
-    image.setAttribute("width","300px");
-    image.setAttribute("height","300px");
-    h3.textContent = item.menu_title;
+    image.style.width = "350px";
+    image.style.height = "300px";
+    image.style.flexShrink = "0";
+    h2.textContent = item.menu_title;
     p.textContent = item.menu_description;
+    p.style.fontSize = "20px";
     price.textContent = item.price;
     card.appendChild(image);
-    text_div.appendChild(h3);
+    text_div.appendChild(h2);
     text_div.appendChild(p);
     text_div.appendChild(price);
     card.appendChild(text_div);
@@ -52,10 +54,10 @@ export function createMenuPage(){
     h2.textContent = "Restaurant Menu";
     h2.classList.add("title");
     container.classList.add("container");
-    content.appendChild(h2);
     for(let item of menu_arr){
         let card = createCard(item);
         container.appendChild(card);
     }
+    content.appendChild(h2);
     content.appendChild(container);
 }
